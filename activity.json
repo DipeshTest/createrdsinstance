@@ -1,0 +1,44 @@
+{
+ "name": "Create AWS RDS Instance",
+ "version": "0.0.1",
+ "type": "flogo:activity",
+ "ref": "github.com/DipeshTest/createrdsinstance",
+ "description": "This activity allows you to create RDS DB Instance of your choice",
+ "author": "AllStars",
+ "inputs":[
+   {
+"name": "accessKeyId",
+"type": "string",
+   "required": true
+},
+{
+"name": "secretAccessKey",
+"type": "string",
+     "required": true
+
+},
+{
+  "name": "region",
+"type": "string",
+     "required": true
+
+},
+{
+"name": "createInstanceInputJson",
+"type": "any",
+     "required": true
+
+}
+
+ ],
+ "outputs": [
+   {
+     "name": "statusCode",
+     "type": "string"
+   },
+   {
+     "name": "createInstanceOutput",
+     "type": "any"
+   }
+ ]
+}
