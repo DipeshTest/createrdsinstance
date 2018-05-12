@@ -18,42 +18,34 @@ flogo add activity github.com/DipeshTest/createrdsinstance
 Inputs and Outputs:
 
 ```json
- "inputs":[
-   {
-"name": "accessKeyId",
-"type": "string",
-   "required": true
-},
-{
-"name": "secretAccessKey",
-"type": "string",
-     "required": true
-
-},
-{
-  "name": "region",
-"type": "string",
-     "required": true
-
-},
-{
-"name": "createInstanceInputJson",
-"type": "any",
-     "required": true
-
-}
-
- ],
- "outputs": [
-   {
-     "name": "statusCode",
-     "type": "string"
-   },
-   {
-     "name": "createInstanceOutput",
-     "type": "any"
-   }
- ]
+ "inputs": [{
+		"name": "accessKeyId",
+		"type": "string",
+		"required": true
+	},
+	{
+		"name": "secretAccessKey",
+		"type": "string",
+		"required": true
+	},
+	{
+		"name": "region",
+		"type": "string",
+		"required": true
+	},
+	{
+		"name": "createInstanceInputJson",
+		"type": "any",
+		"required": true
+	}],
+	"outputs": [{
+		"name": "statusCode",
+		"type": "string"
+	},
+	{
+		"name": "createInstanceOutput",
+		"type": "any"
+	}]
 ```
 ## Settings
 | Setting     | Required | Description |
