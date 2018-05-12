@@ -38,7 +38,7 @@ Inputs and Outputs:
 		"type": "any",
 		"required": true
 	}],
-	"outputs": [{
+ "outputs": [{
 		"name": "statusCode",
 		"type": "string"
 	},
