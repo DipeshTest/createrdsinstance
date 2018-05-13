@@ -55,10 +55,10 @@ Inputs and Outputs:
 ## Settings
 | Setting     | Required | Description |
 |:------------|:---------|:------------|
-| accessKeyId | True     | Access Key ID for your AWS acount , Use link :  https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html |         
-| secretAccessKey   | True    |Secret Access Key for your AWS acount , Use link :  https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html |
-| region    | True     | Regions and Availability Zones for AWS , Check link : https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RegionsAndAvailabilityZones.html|  
-| createInstanceInputJson   | True     | Input json to create rds db instance , Please refer below json schema |
+| accessKeyId | True     | Access Key ID for your AWS acount, Use link :  https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html |         
+| secretAccessKey   | True    |Secret Access Key for your AWS acount, Use link :  https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html |
+| region    | True     | Regions and Availability Zones for AWS, Check link : https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RegionsAndAvailabilityZones.html|  
+| createInstanceInputJson   | True     | Input json to create rds db instance, Please refer below json schema |
 
 Note - 
 1. While creating the IAM user for AWS account, Please add the IAM user to the group which has privilige to create RDS DB instance 
