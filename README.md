@@ -4,7 +4,7 @@ weight: 1
 ---
 
 # Create AWS RDS Instance
-This activity allows you to create AWS RDS DB Instance of your choice.This activity is built by Team AllStars.
+This activity allows you to create AWS RDS DB Instance of your choice. This activity is built by Team AllStars.
 
 ## Installation
 ### Flogo CLI
