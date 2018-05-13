@@ -4,11 +4,11 @@ weight: 1
 ---
 
 # Create AWS RDS Instance
-This activity allows you to create AWS RDS DB Instance of your choice
+This activity allows you to create AWS RDS DB Instance of your choice.
 
 ## Installation
 ### Flogo Web
-This activity comes out of the box with the Flogo Web UI
+This activity is built by Team AllStars
 ### Flogo CLI
 ```bash
 flogo install github.com/DipeshTest/createrdsinstance
@@ -16,7 +16,7 @@ flogo install github.com/DipeshTest/createrdsinstance
 
 ### Third-party libraries used
 - #### aws-sdk-go:
-	Package aws provides the core SDK's utilities and shared types. This package's utilities are used to simplify setting and reading API operations parameters. For more details, visit - https://docs.aws.amazon.com/sdk-for-go/api/aws/
+	Package aws provides the core SDK's utilities and shared types. This package's utilities are used to simplify setting and reading API operations parameters. For more details, check - https://docs.aws.amazon.com/sdk-for-go/api/aws/
 	
 	
 ## Schema
@@ -60,8 +60,9 @@ Inputs and Outputs:
 | region    | True     | Regions and Availability Zones for AWS , Check link : https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RegionsAndAvailabilityZones.html|  
 | createInstanceInputJson   | True     | Input json to create rds db instance , Please refer below json schema |
 
-Note - 1. While creating the IAM user for AWS account, Please add the IAM user to the group which has privilige to create RDS DB instance 
-       2. Please refere link : https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBCluster.html for more input and output details
+Note - 
+1. While creating the IAM user for AWS account, Please add the IAM user to the group which has privilige to create RDS DB instance 
+1. Please refer link : https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBCluster.html for more input and output details
 
 ```json
 {
