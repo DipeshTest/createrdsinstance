@@ -62,7 +62,7 @@ Inputs and Outputs:
 
 Note - 
 1. While creating the IAM user for AWS account, Please add the IAM user to the group which has privilige to create RDS DB instance 
-1. Please refer link : https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBCluster.html for more input and output details
+2. Please refer link : https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBCluster.html for more input and output details
 
 ```json
 {
@@ -116,3 +116,17 @@ Min. Required Fields :
 
 ## Examples
 Please refer activity_test.go 
+
+## Response Codes
+
+| ResponseCode     | Type | Description |
+|:------------|:---------|:------------|
+|200 |OK| The request was successful and the response body contains the json output for operation requested.|
+|101 |ACCESS KEYID BLANK ERROR| Access KeyId field is blank.|
+|102 |SECRET ACCESSKEY BLANK ERROR| SecretAccessKey  field is blank.|
+|103 |REGION BLANK ERROR| Region  field is blank.|
+|104 |CreateInstanceInputJson BLANK ERROR| CreateInstanceInputJson  field is blank.|
+|105 |CreateInstanceInputJson PARSE ERROR| CreateInstanceInputJson is an invalid json.|
+|106 |INVALID REGION ERROR| When Region is invalid you will get this error.|
+
+Note - Please refer link - https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Operations.html for additional response codes
