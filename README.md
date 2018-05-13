@@ -59,7 +59,7 @@ Inputs and Outputs:
 | createInstanceInputJson   | True     | Input json to create rds db instance, Please refer below json schema |
 
 Note - 
-1. While creating the IAM user for AWS account, Please add the IAM user to the group which has privilige to create RDS DB instance 
+1. While creating the IAM user for AWS account, Please add the IAM user to the group which has privilege to create RDS DB instance 
 2. Please refer link : https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBCluster.html for more input and output details
 
 ```json
@@ -120,11 +120,11 @@ Please refer activity_test.go
 | ResponseCode     | Type | Description |
 |:------------|:---------|:------------|
 |200 |OK| The request was successful and the response body contains the json output for operation requested.|
-|101 |ACCESS KEYID BLANK ERROR| Access KeyId field is blank.|
-|102 |SECRET ACCESSKEY BLANK ERROR| SecretAccessKey  field is blank.|
-|103 |REGION BLANK ERROR| Region  field is blank.|
-|104 |CreateInstanceInputJson BLANK ERROR| CreateInstanceInputJson  field is blank.|
-|105 |CreateInstanceInputJson PARSE ERROR| CreateInstanceInputJson is an invalid json.|
-|106 |INVALID REGION ERROR| When Region is invalid you will get this error.|
+|101 |INVALID INPUT| Access KeyId field is blank.|
+|102 |INVALID INPUT| SecretAccessKey  field is blank.|
+|103 |INVALID INPUT| Region  field is blank.|
+|104 |INVALID INPUT| CreateInstanceInputJson  field is blank.|
+|105 |INVALID INPUT| CreateInstanceInputJson is an invalid json.|
+|106 |INVALID INPUT| When Region is invalid you will get this error.|
 
 Note - Please refer link - https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Operations.html for additional response codes
